@@ -1,0 +1,25 @@
+package day2;
+public class Day2 {
+    public static void main(String[] args) {
+        String Nama = "IHKSAN";
+        String Kelas= "INFORMATIKA B 23";
+        
+        System.out.println("Nama saya="+Nama);
+        System.out.println("Kelas="+Kelas);
+        
+        // Tipe tipe Data
+        
+        byte  variableByte = 12;
+        short variableShort = 15;
+        int   variableInt = 156;
+        long 		variablelong = 135;
+        
+        float variable_float = 13.4f;
+        double variable_double = 15; //15.0
+            
+        char huruf = 'A'; // hanya mampu menampung 1 karekter,di tandai dengan kutip 1(')
+        boolean ApaAkuLulus = true; //atau false (benar,salah)
+        
+    }
+    
+}
