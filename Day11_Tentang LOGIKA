@@ -1,0 +1,36 @@
+package day11;
+
+public class day_11 {
+    
+    public static void main(String[] args) {
+        // LOGIKA
+        System.out.println(" NOT (!)");
+        // NOT Adalah kebalikan
+        boolean lulus = false;
+        boolean hasil = !lulus;
+        System.out.println(hasil);
+        
+        System.out.println("========================");
+        System.out.println(" AND (&&)");
+        // jika salah satu variabel bernilai false maka hasilnya adalah false
+        boolean a = true; 
+        boolean b = true;
+        boolean d = false;
+        boolean c = a && b && d;
+        System.out.println(c);
+        
+        System.out.println("========================");
+        System.out.println(" OR (||)");
+        // jika salah satu variabel bernilai false maka hasilnya adalah false       
+        boolean w = false; 
+        boolean e = true;
+        boolean k = w || e;
+        System.out.println(k);
+        
+        /*
+        MOT (tidak)  !
+        AND (dan)    &&
+        OR  (atau)   ||
+        /*
+    } 
+}
