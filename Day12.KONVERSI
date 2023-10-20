@@ -1,0 +1,20 @@
+package Day12;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        // program untuk konversi data 
+        int nilaiInt = 458; //32-bit 
+        System.out.println("nilai Int = " +nilaiInt);
+        
+        // Memperluas rentang ke tipe data yang lebih besar
+        long nilaiLong = nilaiInt;
+        System.out.println("nilai long = " + nilaiInt);
+        
+        // Memperkecil rentang ke tipe data yang lebih kecil
+        byte nilaiByte = (byte) nilaiInt; 
+        System.out.println("nilai byte = " + nilaiInt);
+        System.out.println("nilai max byte = " + Byte.MAX_VALUE);
+        System.out.println("nilai min byte = " + Byte.MIN_VALUE);
+    }
+}
