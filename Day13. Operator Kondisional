@@ -1,0 +1,25 @@
+package operatorkondisional;
+
+import java.util.Scanner;
+
+public class OperatorKondisional {
+    public static void main(String[] args) {
+        //int a, b;
+       // a = 20;
+        //b = 12;
+       // int c = a - b;
+       // String hasil = a >= 0?"Positif":"Negatif";
+       // System.out.println(hasil);
+       
+        System.out.println("CONTOH SOAL");
+        System.out.println("Suatu sekolah memiliki nilai minimal\nketuntasan untuk lulus sebesar 75");
+        Scanner masuk = new Scanner (System.in);
+        System.out.print("Masukkan nilai = ");
+        int nilai = masuk.nextInt();
+        int kkm = 75;
+        String hasil = nilai >= kkm?"LULUS":"TIDAK LULUS";
+        System.out.println("Nilai Rayhan : "+nilai);
+        System.out.println("Dan Rayhan dinyatakan "+hasil);
+    }
+    
+}
