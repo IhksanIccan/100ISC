@@ -1,0 +1,15 @@
+package OperatorTernary;
+
+import java.util.Scanner;
+
+public class day15 {
+    
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner(System.in);
+        System.out.print ("masukkan angka :"); 
+        int angka = masuk.nextInt();
+        int hasil = angka % 2;
+        String kondisi = hasil == 0? "Genap":"Ganjil";
+        System.out.println(kondisi);
+    }
+}
