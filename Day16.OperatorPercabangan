@@ -1,0 +1,33 @@
+package operatorpercabangan ;
+
+import java.util.Scanner;
+
+public class day16 {
+    
+    public static void main(String[] args) {
+        Scanner masukkan = new Scanner(System.in);
+        System.out.print("total belanja = ");
+        double total = masukkan.nextDouble();
+        System.out.println("Belanja Rp."+ total);
+     if (total >=600000) { 
+        System.out.println("Dapat diakon 20%");
+        double diskon = 20 * total / 100;
+        total -= diskon;
+    }else if (total >=250000) {
+        System.out.println("Dapat diakon 15%");
+        double diskon = 15 * total / 100;
+        total -= diskon;
+    }else if (total >= 100000) {
+        System.out.println("Dapat diskon 10%");
+        double diskon = 10 * total / 100;
+        total -= diskon;
+    }
+        else {
+        
+             System.out.println("Tidak dapat diskon");
+        }
+                
+        System.out.println("Akhir Rp."+total);
+    }
+    
+}
