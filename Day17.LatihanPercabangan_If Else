@@ -1,0 +1,37 @@
+package latihan_ifelse;
+
+import java.util.Scanner;
+
+public class Latihan_IfElse {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner(System.in);
+        String Menu = null;
+        int Pilihan, Harga=0, Porsi;
+        System.out.println("------Pesan Minuman Online------");
+        System.out.println("1.Teh poci original\n2.Teh poci susu\n3.Bopa\n4.Kopi");
+        System.out.print("Pilihan Pesanan : ");
+        Pilihan = masuk.nextInt();
+        if(Pilihan == 1){
+            Menu = "Teh poci original";
+            Harga = 5000;
+        }else if(Pilihan == 2){
+            Menu = "Teh poci susu";
+            Harga = 7000;
+        }else if (Pilihan == 3) {
+            Menu = "Boba";
+            Harga = 10000;
+        }
+        if (Menu == null) {
+            System.out.println("Pesanan ini sudah Habis");
+        }else{
+        System.out.print("Jumlah Porsi \t: ");
+        Porsi = masuk.nextInt();
+        System.out.println("==================");
+        System.out.print("Menu Dipesan \t: ");
+        System.out.println(Menu +" - Rp."+Harga+"/Porsi");
+        Harga = Harga * Porsi;
+        System.out.println("Total Harga \t: Rp "+Harga);   
+       }
+    }
+    
+}
