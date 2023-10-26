@@ -1,0 +1,39 @@
+package ifelse;
+
+import java.util.Scanner;
+
+public class IfElse {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner (System.in);
+        int Harga = 0, Diskon = 0;
+        int Pilihan, Porsi;
+        String Menu = null;
+        System.out.println("=====MENU MAKANAN=====");
+        System.out.println("1. Mie Bakso\n2. Mie Ayam");
+        System.out.print("Pilihan : ");
+        Pilihan = masuk.nextInt();
+        System.out.print("Porsi \t: ");
+        Porsi = masuk.nextInt();
+        if (Pilihan == 1) {
+            Menu = "Mie Bakso";
+            Harga = 8000;
+        }else if (Pilihan == 2) {
+            Menu = "Mie Ayam";
+            Harga = 9000;
+            if(Porsi >= 10){
+                Diskon = 10 * (Harga * Porsi)/100;
+                System.out.println("Dapat Diskon 10% - Rp."+Diskon);
+            }else{
+                System.out.println("Beli Min 10 Bisa Dapat Diskon 10%");
+            }
+}
+            System.out.println("==================================");
+            System.out.println("Menu Terpilih : ");
+            System.out.println(Menu+" - Rp. "+Harga+"/Porsi");
+            Harga = (Harga * Porsi) - Diskon;
+            System.out.println("Total Rp. "+Harga);
+        
+        
+    }
+    
+}
