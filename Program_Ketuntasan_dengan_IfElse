@@ -1,0 +1,30 @@
+package day19_ifelse;
+
+import java.util.Scanner;
+
+public class Day19_IfElse {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        double mtk, bind, bing, ipa, jml, rata, kkm;
+        System.out.print("Matematika \t: ");
+        mtk = input.nextDouble();
+         System.out.print("B.Indonesia \t: ");
+        bind = input.nextDouble();
+         System.out.print("B.Inggris \t: ");
+        bing = input.nextDouble();
+         System.out.print("Ipa \t\t: ");
+        ipa = input.nextDouble();
+        
+        kkm = 75;
+        jml = mtk + bind + bing + ipa;
+        
+        rata = jml / 4;
+        System.out.println("Rata-Rata Nilai :"+rata);
+        if(rata >= kkm) {
+            System.out.println("Selamat Anda LULUS");
+        }else{
+            System.out.println("Anda Tidak LULUS");
+        }      
+    }
+    
+}
