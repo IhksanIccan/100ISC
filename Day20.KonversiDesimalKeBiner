@@ -1,0 +1,11 @@
+package konversidesimalkebiner;
+import java.util.Scanner;
+public class KonversiDesimalKeBiner {
+    public static void main(String[] args) {
+        Scanner masuk = new Scanner (System.in);
+        System.out.print("Desimal : ");
+        int angka = masuk.nextInt();
+        System.out.println(Integer.toBinaryString(angka));
+        
+    }
+}
