@@ -1,0 +1,22 @@
+package pembetulandesimalkebinary;
+
+import java.util.Scanner;
+
+public class PembetulanDesimalKeBinary {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Angka desimal   \t: ");
+        int decimal = input.nextInt();
+        String binary = convertToBinary(decimal);
+        System.out.println("Hasil konversi ke biner : " + binary);
+    }      
+    public static String convertToBinary(int decimal) {
+        StringBuilder binaryString = new StringBuilder();
+        while (decimal > 0) {
+            int remainder = decimal % 2;
+            binaryString.insert(0, remainder);
+            decimal = decimal / 2;
+        }        
+        return binaryString.toString();
+    }  
+}
