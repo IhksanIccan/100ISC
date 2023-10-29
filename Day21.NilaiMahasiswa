@@ -1,0 +1,30 @@
+package NilaiMahasiswa;
+
+import java.util.Scanner;
+
+public class NilaiMahasiswa {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.println("~~~~~~~~NILAI MAHASISWA~~~~~~~~");
+        String NIM, Nama, Matkul;
+        double Presensi, Tugas, UAS, rata2;
+       
+        System.out.print("NIM \t\t: ");
+        NIM = input.nextLine();
+        System.out.print("Nama \t\t: ");
+        Nama = input.nextLine();
+        System.out.print("Mata Kuliah \t: ");
+        Matkul = input.nextLine();
+       
+        System.out.print("\nNilai Presensi \t: ");
+        Presensi = input.nextDouble();
+        System.out.print("Nilai Tugas \t: ");
+        Tugas = input.nextDouble();
+        System.out.print("Nilai UAS \t: ");
+        UAS = input.nextDouble();
+         
+        rata2 = 0.3*Presensi + 0.3*Tugas + 0.4*UAS;
+        System.out.println("\nRata-Rata Nilai :"+rata2);
+    }
+}
