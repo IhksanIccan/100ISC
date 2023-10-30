@@ -1,0 +1,28 @@
+package percabanganswicthcase;
+
+import java.util.Scanner;
+
+public class PercabanganSwicthCase {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        System.out.println("JADWAL PEMBELAJARAN INF B23");
+        System.out.print("Masukkan Hari : ");
+        String Matkul = input.nextLine();
+        System.out.println("========================");
+        System.out.println("Mata Kuliah Yang Masuk");
+        switch (Matkul) {
+            case "selasa" :
+                System.out.println(">PSTI\t[07:30]\n>DDP\t[09:10]");
+                break;
+            case "rabu" :
+                System.out.println(">FE\t[09:00]\n>Bind\t[10:50]");
+                break;
+            case "kamis":
+                System.out.println(">P.pancasila\t[07:30]\n>PAI\t\t[09:10]\n>PKN\t\t[10:50]");
+                break;
+            default:
+                System.out.println("Kosong");
+                break;
+        }
+    }
+}
