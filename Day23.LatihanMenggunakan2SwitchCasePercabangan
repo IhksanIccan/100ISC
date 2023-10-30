@@ -1,0 +1,79 @@
+package latihanswitchcasepercabangan;
+
+import java.util.Scanner;
+
+public class LatihanSwitchCasePercabangan {
+    public static void main(String[] args) {
+        int pil, porsi, harga = 0, harga1=0;
+        Scanner input = new Scanner (System.in);
+        System.out.println("MENERIMA PESANAN ONLINE\nFREE ONGKIR!");
+        System.out.println("============== MENU MAKANAN");
+        System.out.println("1.Bebek Goreng\n2.Ayam Penyet\n3.Nasi Sop");
+        System.out.println("==========================");
+        System.out.print("Pilihan \t: ");
+        pil = input.nextInt();
+        switch(pil){
+            case 1: 
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Bebek Goreng (25000k/Porsi)");
+                harga = 25000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga);
+                break;
+            case 2:
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Ayam Penyet (15k/Porsi)");
+                harga = 15000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga);
+                break;
+            case 3:
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Nasi Sop (17k/Porsi)");
+                harga = 17000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga);
+                break;
+            default:
+                System.out.println("Pilihan Tidak Ada");
+                break;         
+            }
+        System.out.println("\n");
+        System.out.println("============== MENU MINUMAN");
+        System.out.println("1.Es Teh\n2.Es Kelapa\n3.Kopi Susu");
+        System.out.println("==========================");
+        System.out.print("Pilihan \t: ");
+        pil = input.nextInt();
+        switch(pil){
+            case 1:
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Es Teh (3k/Porsi)");
+                harga1 = 3000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga1);
+                break;
+            case 2:
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Es Kelapa (10k/Porsi)");
+                harga1 = 10000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga1);
+                break;
+            case 3:
+                System.out.print("Porsi \t\t: ");
+                porsi = input.nextInt();
+                System.out.println("Kopi Susu (5k/Porsi)");
+                harga1 = 5000 * porsi;
+                System.out.println("Total Harga \t: Rp."+harga1);
+                break;
+            default:
+                System.out.println("Pilihan Tidak Ada");
+                break; 
+            }
+        System.out.println("\n");
+        System.out.println("==========================");
+        harga = harga+harga1;
+        System.out.println("Total Semuanya : Rp." +harga);
+        System.out.println("\n==== SELAMAT MENIKMATI ====");
+    }  
+}
