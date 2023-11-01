@@ -1,0 +1,18 @@
+package loopingforperulangan;
+
+import java.util.Scanner;
+
+public class LoopingFORperulangan {
+    public static void main(String[] args) {
+        int awal, akhir;
+        Scanner masuk = new Scanner(System.in);
+        System.out.println("Range Angka");
+        System.out.print("Awal  : ");
+        awal = masuk.nextInt();
+        System.out.print("Akhir : ");
+        akhir = masuk.nextInt();
+        for (int i = awal; i <= akhir; i++) {
+            System.out.println(i);
+        }
+    }
+}
