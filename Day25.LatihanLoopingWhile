@@ -1,0 +1,51 @@
+package latihanlootingforwhile;
+
+import java.util.Scanner;
+
+public class LatihanLootingFORWhile {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        int awal, akhir, split;
+        System.out.println("Bilangan Genap");
+        System.out.print("Angka awal  : ");
+        awal = input.nextInt();
+        System.out.print("Angka akhir : ");
+        akhir = input.nextInt();
+        System.out.print("Bilangan Genap nya adalah : \n");
+        int a = awal;
+        split = a;
+        while (a <= akhir) {
+            int hasil = a % 2;
+            if (hasil == 0){
+                  System.out.print(a+" ");
+                  if (split == 5){
+                      System.out.println(""); 
+                      split = 0;
+                }
+                split++;
+            }
+            a++;
+        } 
+        System.out.println("");
+        System.out.println("Bilangan ganjil");
+        System.out.print("Angka awal  : ");
+        awal = input.nextInt();
+        System.out.print("Angka akhir : ");
+        akhir = input.nextInt();
+        System.out.print("Bilangan Ganjil nya adalah : \n");
+        int i = awal;
+        split = i;
+        while (i <= akhir) {
+            int hasil = i % 2;
+            if (hasil == 1){
+                  System.out.print(i+" ");
+                  if (split == 5){
+                      System.out.println(""); 
+                      split = 0;
+                }
+                split++;
+            }
+            i++;
+        } 
+    }
+}
