@@ -1,0 +1,26 @@
+package perulangandowhile;
+
+import java.util.Scanner;
+
+public class PerulanganDoWhile {
+    public static void main(String[] args) {
+        Scanner san = new Scanner (System.in);
+        int awal, akhir, split;
+        System.out.print("Awal  : ");
+        awal = san.nextInt();
+        System.out.print("Akhir : ");
+        akhir = san.nextInt();
+        int a = awal;
+        split = a;
+        do {
+            System.out.print(a+" ");
+            if (split == 5){
+                System.out.println("");
+                split = 0;
+            }
+            split++;
+            a++;
+        }while(a <= akhir);
+        System.out.println("");
+    }  
+}
