@@ -1,0 +1,38 @@
+package hargaberas;
+
+import java.util.Scanner;
+
+public class hargaberas {
+
+    public static void main(String[] args) {
+         int hargaPerKarung = 500000;
+
+        Scanner can = new Scanner(System.in);
+        int hrgakarung = 500000;
+        System.out.println("-----------------------------------");
+        System.out.println("  Silahkan Mampir Di Toko Barokah");
+        System.out.println("-----------------------------------");
+        System.out.println("=====Diskon yang sangat woww!!=====");
+        System.out.println("===Harga Beras Rp.500.000/karung===");
+        System.out.println("Dapat Diskon 3% Jika Membeli 150 Karung");
+        System.out.println("Dapat Diskon 7% Jika Membeli 300 Karung");
+        System.out.println("TUNGGU APA LAGI AYO BURUAN MAMPIR SEBELUM HABIS");
+        System.out.println("-----------------------------------");
+        System.out.print("Jumlah beras yg anda beli : ");
+        int jmlkarung = can.nextInt();
+
+        int totalHarga = hrgakarung* jmlkarung;
+
+        if (jmlkarung>=150&&jmlkarung<300) {
+            double diskon = 0.03 * totalHarga;
+            totalHarga -= diskon;
+            System.out.println("Anda dapat diskon 3%\nHarga semua Rp. " + totalHarga);
+        } else if (jmlkarung >= 300) {
+            double diskon = 0.07 * totalHarga;
+            totalHarga -= diskon;
+            System.out.println("Anda dapat diskon 7%,\nHarga Semua Rp. " + totalHarga);
+        } else {
+            System.out.println("Anda tidak mendapatkan diskon, harga yang harus Anda Rp. " + totalHarga);
+        }
+    }
+}
