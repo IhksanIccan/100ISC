@@ -1,0 +1,19 @@
+package operatorperulanganmembuatpola;
+
+import java.util.Scanner;
+
+public class OperatorPerulanganMembuatPola {
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        // Membuat Pola Persegi Dengan Perulangan For
+        System.out.print("Masukkan Angka : ");
+        int jumlah = can.nextInt();
+        for (int i = 1; i <= jumlah; i++) {
+            for (int j = 1; j < jumlah; j++) {
+                System.out.print("O  ");
+            }
+            System.out.println("O ");
+        }
+        System.out.println("");
+    }  
+}
