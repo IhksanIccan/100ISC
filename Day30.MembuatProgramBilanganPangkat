@@ -1,0 +1,23 @@
+package latihanbilanganpangkat;
+
+import java.util.Scanner;
+
+public class LatihanBilanganPangkat {
+    public static void main(String[] args) {
+        // hasil bilangan berpangkat
+        Scanner can = new Scanner (System.in);
+        int bil, pangkat, hasil;
+        System.out.print("Bilangan : ");
+        bil = can.nextInt();
+        System.out.print("Pangkat  : ");
+        pangkat = can.nextInt();
+        System.out.println("------------------");
+        System.out.print("Hasil    : ");
+        hasil = bil;
+        for (int i = 1; i < pangkat; i++) {
+            hasil *= bil;
+        }
+        System.out.println(hasil);
+    }
+    
+}
