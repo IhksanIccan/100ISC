@@ -1,0 +1,15 @@
+package Isc31;
+public class isc31 {
+    public static void main(String[] args) {
+        // Mengenal Array 1 dimensi pada Bahasa Pemrograman Java
+        int i [] = new int [3];
+        i[0] = 7;
+        i[1] = 6;
+        i[2] = 3;
+        System.out.println(i[0]);
+        i[0] = 10;
+        System.out.println(i[0]);
+        
+    }
+    
+}
