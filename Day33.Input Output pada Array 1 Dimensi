@@ -1,0 +1,28 @@
+package arrayinput;
+
+import java.util.Scanner;
+
+public class arrayinput {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        int jumlah_index;
+        System.out.print("Jumlah index : ");
+        jumlah_index = can.nextInt();
+        int a[] = new int [jumlah_index];
+        System.out.println("Input : ");
+        System.out.println("__________________\n");
+        
+        for (int j = 0; j < jumlah_index; j++){
+            System.out.print("index-"+j+ " : ");
+            a[j] = can.nextInt();
+        }
+        
+        System.out.println("__________________\n");
+        System.out.println("Output : ");
+        for (int j = 0; j < jumlah_index; j++){
+            System.out.print(a[j]+" ");
+        }
+    }
+    
+}
