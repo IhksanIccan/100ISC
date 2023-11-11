@@ -1,0 +1,19 @@
+package ratarata_array;
+public class Ratarata_array {
+    public static void main(String[] args) {
+        int [] a = {5, 6, 7, 8, 9};
+        int total = 0;
+        double rata;
+        int jumlah_index = a.length;
+        System.out.print("Deret Angka : ");
+        for (int i = 0; i < jumlah_index; i++) {
+            System.out.print(a[i]+" ");
+            total += a[i];
+        }
+        System.out.println("");
+        System.out.println("Total : "+total);
+        rata = total/jumlah_index;
+        System.out.println("Rata-Rata : "+rata);
+    }
+    
+}
