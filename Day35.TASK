@@ -1,0 +1,27 @@
+package TASK;
+
+import java.util.Scanner;
+
+public class TASK {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int jml = 0;
+        int jmlGanjil = 0;
+        System.out.print("Masukkan batas bilangan : ");
+        int batas = input.nextInt();
+         int bilanganGanjil = 1;
+        while (jml < 100 && bilanganGanjil <= batas) {
+            if (bilanganGanjil % 2 != 0) {
+                jmlGanjil += bilanganGanjil;
+                jml++;
+            }
+            bilanganGanjil++;
+        }
+        System.out.println("----------------------------------");
+        System.out.println("Jumlah bilangan ganjil pertama : "+jmlGanjil);
+        
+    }
+}
+
+    
