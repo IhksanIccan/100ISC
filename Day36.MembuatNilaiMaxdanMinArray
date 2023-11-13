@@ -1,0 +1,22 @@
+package nilaimaxminarray;
+
+import java.util.Arrays;
+import java.util.Collections;
+
+public class NilaiMaxMinArray {
+    public static void main(String[] args) {
+        Integer[] a = {24, 57, 87, 100, 27, 367, 79, 150, 19};
+        int maks = Collections.max(Arrays.asList(a));
+        int min = Collections.min(Arrays.asList(a));
+        System.out.print("Deret angka : ");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]+" ");
+            
+        }
+        System.out.println("");
+        System.out.println("Max : "+maks);
+        System.out.println("Min : "+min);
+        
+    }
+   
+}
