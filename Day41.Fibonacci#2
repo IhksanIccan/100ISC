@@ -1,0 +1,21 @@
+package fibonacci.pkg2;
+
+import java.util.Scanner;
+
+public class Fibonacci2 {
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        int angkaSebelumnya = 0;
+        int angkaSkrng = 1;
+        System.out.print("Masukkan angka deret Fibonacci : ");
+        int panjang = can.nextInt();
+        System.out.println("Deret Fibonacci " + panjang + " :");
+        for (int i = 0; i < panjang; i++) {
+            System.out.print(angkaSebelumnya + " ");
+            int angkaSelanjutnya = angkaSebelumnya + angkaSkrng;
+            angkaSebelumnya = angkaSkrng;
+            angkaSkrng = angkaSelanjutnya;
+        }
+        System.out.println("");
+    }
+}
