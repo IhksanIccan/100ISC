@@ -1,0 +1,18 @@
+package array.multidimensi;
+public class ArrayMultidimensi {
+    public static void main(String[] args) {
+        String[][] biodata = {
+            {"NAMA  : ","IHKSAN"},
+            {"NIM   :"," D0223049"},
+            {"KELAS : ","INFORMATIKA B23"}
+        };
+        
+        System.out.print(biodata[0][0]); 
+        System.out.println(biodata[0][1]);  
+        System.out.print(biodata[1][0]); 
+        System.out.println(biodata[1][1]);
+        System.out.print(biodata[2][0]); 
+        System.out.println(biodata[2][1]); 
+        
+    }
+}
