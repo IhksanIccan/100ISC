@@ -1,0 +1,19 @@
+package arraymultidimensi.pkg2;
+public class Arraymultidimensi2 {
+    public static void main(String[] args) {
+        System.out.println("MENU MINUMAN");
+        String[][]MenuMinuman = {
+            {"Jus Apel","\tRp.15000"},
+            {"Jus Sirsak","\tRp.10000"},
+            {"Jus Alpukat","\tRp.18000"},
+            {"Jus Mangga","\tRp.12000"},
+            {"Jus Melon","\tRp.17000"}
+    };
+        for (int i = 0; i < MenuMinuman.length; i++) {
+            for (int j = 0; j < MenuMinuman[i].length; j++) {
+                System.out.print(MenuMinuman[i][j]);
+            }
+            System.out.println("");
+        }
+    }
+}
