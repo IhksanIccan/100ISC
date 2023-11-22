@@ -1,0 +1,59 @@
+package latihanarraymultidimensi;
+
+import java.util.Scanner;
+
+public class LatihanArrayMultidimensi {
+    public static void main(String[] args) {
+         System.out.println("MENU MAKANAN");
+         int menu,harga,porsi;
+         Scanner can = new Scanner (System.in);
+        String[][]MenuMakanan = {
+            {"Nasi Ayam","\tRp.15000"},
+            {"Gado Gado","\tRp.11000"},
+            {"Nasi Kuning","\tRp.10000"},
+            {"Nasi Goreng","\tRp.12000"},
+            {"Bakso Bercon","\tRp.17000"}
+    };
+         for (int i = 0; i < MenuMakanan.length; i++) {
+            System.out.println((i + 1)+"."+ MenuMakanan[i][0]+ MenuMakanan[i][1]);
+            
+    }
+        System.out.print("Pilih Menu : ");
+        menu = can.nextInt();
+        System.out.print("Porsi : ");
+        porsi = can.nextInt();
+
+        switch(menu){
+            case 1 :
+                harga = 15000;
+                System.out.println("Nasi Ayam Rp."+harga+"/porsi");
+                System.out.println("Total semuanya Rp."+harga*porsi);
+                break;
+            case 2 :
+                harga = 11000;
+                System.out.println("Gado Gado Rp."+harga+"/porsi");
+                System.out.println("Total semuanya Rp."+harga*porsi);
+                break;
+            case 3 :
+                harga = 10000;
+                System.out.println("Nasi Kuning Rp."+harga+"/porsi");
+                System.out.println("Total semuanya Rp."+harga*porsi);
+                break;
+            case 4 :
+                harga = 12000;
+                System.out.println("Nasi Goreng Rp."+harga+"/porsi");
+                System.out.println("Total semuanya Rp."+harga*porsi);
+                break;
+            case 5 :
+                harga = 17000;
+                System.out.println("Bakso Bercon Rp."+harga+"/porsi");
+                System.out.println("Total semuanya Rp."+harga*porsi);
+                break;
+            default :
+                System.out.println("Pesanan Tidak Ada");
+                
+    
+        }       
+    
+    }
+}
