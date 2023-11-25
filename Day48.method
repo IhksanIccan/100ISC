@@ -1,0 +1,22 @@
+package method;
+public class Method {
+    // prosedur
+    public static void siswa() {
+        String nama = "rayhan";
+        String hobi = "bola";
+        int umur = 15;
+        System.out.println("Nama : "+nama+"\nHobi : "+hobi+"\nUmur : "+umur+" thn");
+        System.out.println("------------------");
+    }
+    //fungsi
+    public static String siswi() {
+        String nama = "siti";
+        String hobi = "nyanyi";
+        int umur = 13;
+        return "Nama : "+nama+"\nHobi : "+hobi+"\nUmur : "+umur+" thn";
+    }
+    public static void main(String[] args) {
+        siswa();
+        System.out.println(siswi());
+    }
+}
