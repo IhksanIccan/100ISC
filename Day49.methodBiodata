@@ -1,0 +1,19 @@
+package method;
+public class Method {
+    public static void biodata() {
+        System.out.println(">>>>>>BIODATA<<<<<<");
+        String nama = "IHKSAN";
+        String nim = "D0223049";
+        System.out.println("Nama \t: "+nama+"\nNIM \t: "+nim);
+    }
+    public static String prodi() {
+         String jurusan = "INFORMATIKA";
+        String alamat = "KATITTING";
+        int umur = 19;
+        return "Jurusan : "+jurusan+"\nAlamat \t: "+alamat+"\nUmur \t: "+umur+" thn";
+    }
+    public static void main(String[] args) {
+        biodata();
+        System.out.println(prodi());
+    }
+}
