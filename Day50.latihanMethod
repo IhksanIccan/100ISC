@@ -1,0 +1,28 @@
+package latihanmethod;
+
+import java.util.Scanner;
+
+public class main {
+    public static void operasi(int a,int b) {
+        int c; 
+        double d;
+        c = a + b;
+        System.out.println(a+" + "+b+" = "+c);
+        c = a - b;
+        System.out.println(a+" - "+b+" = "+c);
+        c = a * b;
+        System.out.println(a+" x "+b+" = "+c);
+        d = a / b;
+        System.out.println(a+" : "+b+" = "+d);
+    }
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        System.out.print("Nilai a : ");
+        int a = can.nextInt();
+        System.out.print("Nilai b : ");
+        int b = can.nextInt();
+        System.out.println("output : ");
+        operasi(a,b);
+    }
+    
+}
