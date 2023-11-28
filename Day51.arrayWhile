@@ -1,0 +1,13 @@
+package arrayWHILE1;
+
+public class arrayWHILE1 {
+    
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5};
+        int index = 0;
+        while (index < a.length) {
+            System.out.println("index " + index + " : " + a[index]);
+            index++;
+        }
+    }
+}
