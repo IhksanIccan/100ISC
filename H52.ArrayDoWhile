@@ -1,0 +1,25 @@
+package arraydo.pkgwhile;
+
+import java.util.Scanner;
+
+public class ArrayDoWhile {
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        System.out.print("Masukkan ukuran array : ");
+        int ukuran = can.nextInt();
+        int[] nomor = new int[ukuran];
+
+        int i = 0;
+        do {
+            System.out.print("Masukkan elemen " + i + " : ");
+            nomor[i] = can.nextInt();
+            i++;
+        } while (i < ukuran);
+        System.out.print("Elemen di array : ");
+        for (int j = 0; j < ukuran; j++) {
+            System.out.print(nomor[j] + " ");
+        }
+
+        can.close();
+    }
+}
