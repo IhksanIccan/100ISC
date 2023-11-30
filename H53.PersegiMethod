@@ -1,0 +1,29 @@
+package H53;
+
+import java.util.Scanner;
+
+public class H53 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang sisi persegi : ");
+        double sisi = can.nextDouble();
+
+        double luas = LuasPersegi(sisi);
+        Hasil(luas);
+
+        can.close();
+    }
+    
+    public static double LuasPersegi(double sisi) {
+        return sisi * sisi;
+    }
+    
+    public static void Hasil(double luas) {
+        System.out.println("Luas persegi : " + luas);
+        
+    }
+    
+}
+
