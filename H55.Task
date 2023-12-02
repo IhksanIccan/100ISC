@@ -1,0 +1,25 @@
+package task;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner can=new Scanner(System.in);
+        int awal=1;
+        System.out.print("Masukkan batas angka :");
+        int akhir=can.nextInt();
+        if(akhir%2==0){
+            System.out.println("\nMasukkan batas deretan ganji");
+            
+        }else{
+           System.out.print("\nDeretan : ");
+            for(int i=awal;awal<=akhir;awal+=2){
+                if(awal==akhir){
+                    System.out.print(awal+" ");   
+                
+                  }else{
+                    System.out.print(awal+",");  
+                  }
+               }
+            }
+        }
+    }
