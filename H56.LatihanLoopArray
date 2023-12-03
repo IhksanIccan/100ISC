@@ -1,0 +1,19 @@
+package H56;
+
+import java.util.Scanner;
+
+public class H56 {
+    
+    public static void main(String[] args) {
+        
+        
+        int[] nilaiMahasiswa = {70, 90, 86, 95, 78};
+        int totalNilai = 0;
+
+        for (int i = 0; i < nilaiMahasiswa.length; i++) {
+            totalNilai += nilaiMahasiswa[i];
+        }
+
+        System.out.println("Total nilai mahasiswa: " + totalNilai);
+    }
+}
