@@ -1,0 +1,29 @@
+package H59;
+
+import java.util.Scanner;
+
+public class H59 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        System.out.print("Masukkan Angka   : ");
+        int angka = can.nextInt();
+        System.out.print("Masukkan pangkat : ");
+        int pangkat = can.nextInt();
+
+        int hasilPangkat = hitungPangkat(angka, pangkat);
+
+        System.out.println(angka + " Pangkat " + pangkat + " = " + hasilPangkat);
+    }
+
+    // Metode untuk menghitung pangkat
+    static int hitungPangkat(int base, int exponent) {
+        int hasil = 1;
+
+        for (int i = 0; i < exponent; i++) {
+            hasil *= base;
+        }
+
+        return hasil;
+    }
+}
