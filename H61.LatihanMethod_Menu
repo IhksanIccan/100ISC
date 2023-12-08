@@ -1,0 +1,53 @@
+package H61;
+
+import java.util.Scanner;
+
+public class H61 {
+    public static void main(String[] args) {
+        MenuMakanan();
+        PilihanMakanan();
+    }
+    public static void MenuMakanan() {
+        Scanner can = new Scanner(System.in);
+        System.out.println("===== MENU MINUMAN ONLINE =====");
+        System.out.println("1.TEH POCI ORIGINAL\tRp.5000\n2.TEH POCI SUSU\t\tRp.7000\n3.TEH POCI LEMONTEH\tRp.6000\n4.TEH POCI BENG-BENG\tRp.10000");
+        System.out.println("-------------------------------");
+    }
+    public static void PilihanMakanan() {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Pilih Minumam : ");
+        int pilihan = can.nextInt();
+        System.out.print("Porsi Minuman : ");
+        int porsi = can.nextInt();
+        int harga = 0;
+
+        switch (pilihan) {
+            case 1:
+                harga = 5000;
+                System.out.println("Anda Memesan Teh Poci Original");
+                System.out.println("Harga Teh Poci Original Rp."+harga+"/porsi");
+                System.out.println("Jadi Total Semua Rp."+harga*porsi);
+                break;
+            case 2:
+                harga = 7000;
+                System.out.println("Anda memesan Teh Poci Susu");
+                System.out.println("Harga Teh Poci Susu Rp."+harga+"/porsi");
+                System.out.println("Jadi Total Semua Rp."+harga*porsi);
+                break;
+            case 3:
+                harga = 6000;
+                System.out.println("Anda memesan Teh Poci Lemonteh");
+                System.out.println("Harga Teh Poci Lemonteh Rp."+harga+"/porsi");
+                System.out.println("Jadi Total Semua Rp."+harga*porsi);
+                break;
+            case 4:
+                harga = 10000;
+                System.out.println("Anda memesan Teh Poci Beng-Beng");
+                System.out.println("Harga Teh Poci Beng-Beng Rp."+harga+"/porsi");
+                System.out.println("Jadi Total Semua Rp."+harga*porsi);
+                break;
+            default:
+                System.out.println("Pesanan Tidak Ada");
+        }
+    }
+}
