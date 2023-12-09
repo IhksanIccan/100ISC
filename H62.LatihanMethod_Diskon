@@ -1,0 +1,25 @@
+package H62;
+
+import java.util.Scanner;
+
+public class H62 {
+
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+
+        System.out.print("Masukkan total belanja : ");
+        double totalBelanja = can.nextDouble();
+
+        System.out.print("Masukkan diskon: ");
+        double Diskon = can.nextDouble();
+
+        double diskon = hitungDiskon(totalBelanja, Diskon);
+        double Pembayaran = totalBelanja - diskon;
+
+        System.out.println("Total Pembayaran : " + Pembayaran);
+    }
+    
+    public static double hitungDiskon(double totalBelanja, double Diskon) {
+        return (Diskon / 100) * totalBelanja;
+    }
+}
