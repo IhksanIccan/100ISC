@@ -1,0 +1,36 @@
+package H65;
+
+import java.util.Scanner;
+
+public class H65 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+
+        System.out.print("Masukkan panjang angka : ");
+        int panjangArray = can.nextInt();
+
+        int[] arrayAngka = new int[panjangArray];
+
+        System.out.println("Masukkan elemen array :");
+
+        for (int i = 0; i < panjangArray; i++) {
+            System.out.print("Elemen ke-" + i + " : ");
+            int elemen = can.nextInt();
+            
+            if (elemen % 2 == 0) {
+                arrayAngka[i] = elemen + 1;
+            } else {
+                arrayAngka[i] = elemen - 1;
+            }
+        }
+
+        System.out.println("Array setelah kondisional : ");
+
+        for (int i = 0; i < panjangArray; i++) {
+            System.out.println("Elemen ke-" + i + " : " + arrayAngka[i]);
+        }
+
+        can.close();
+    }
+}
