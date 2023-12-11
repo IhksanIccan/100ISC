@@ -1,0 +1,19 @@
+package H64;
+
+import java.util.Scanner;
+
+public class H64 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        System.out.print("Masukkan Angka : ");
+        int angka = can.nextInt();
+        boolean hasil = lihatAngka(angka);
+        
+        System.out.println("Angka " + angka + " Adalah Angka " + (hasil ? "Genap" : "Ganjil"));
+    }
+    
+    public static boolean lihatAngka(int angka) {
+        return angka % 2 == 0;
+    }
+}
