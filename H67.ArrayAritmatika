@@ -1,0 +1,28 @@
+package H67;
+
+import java.util.Scanner;
+
+public class H67 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        System.out.print("Masukkan panjangnya : ");
+        int panjangArray = can.nextInt();
+        
+        int[] angka = new int[panjangArray];
+        
+        System.out.print("Masukkan nilai awal : ");
+        int nilaiAwal = can.nextInt();
+        System.out.print("Masukkan selisih : ");
+        int selisih = can.nextInt();
+        
+        for (int i = 0; i < panjangArray; i++) {
+            angka[i] = nilaiAwal + i * selisih;
+        }
+        
+        System.out.print("Array Aritmatika : ");
+        for (int i = 0; i < panjangArray; i++) {
+            System.out.print(angka[i] + " ");
+        }
+    }
+}
