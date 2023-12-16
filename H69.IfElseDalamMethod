@@ -1,0 +1,23 @@
+package H69;
+
+import java.util.Scanner;
+
+public class H69 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Masukkan angka : ");
+        int angka = can.nextInt();
+        
+        String hasil = cekAngka(angka);
+        System.out.println("Hasil : " + hasil);
+    }
+    
+    public static String cekAngka(int angka) {
+        if (angka % 2 == 0) {
+            return "Angka genap";
+        } else {
+            return "Angka ganjil";
+        }
+    }
+}
