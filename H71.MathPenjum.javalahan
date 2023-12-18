@@ -1,0 +1,13 @@
+package H71;
+
+public class H71 {
+    
+    public static void main(String[] args) {
+        int a = 60;
+        int b = 20;
+        
+        int c = Math.addExact(a,b);
+        System.out.print("Hasil : ");
+        System.out.println(c);
+    }    
+}
