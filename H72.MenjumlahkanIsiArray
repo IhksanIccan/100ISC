@@ -1,0 +1,14 @@
+package H72;
+
+public class H72 {
+    
+    public static void main(String[] args) {
+        int[] nilaiAngka= {2,67,21,87,75,24,0,97};
+        
+        int total = 0;
+        for (int angka : nilaiAngka) {
+            total += angka;
+        }
+        System.out.println("Hasil Jumlah Semua : " + total);
+    }
+}
