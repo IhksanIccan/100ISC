@@ -1,0 +1,19 @@
+package H83;
+
+public class H83 {
+    
+    public static void main(String[] args) {
+        boolean hasil1 = operasiLogikaAND(true, false);
+        boolean hasil2 = operasiLogikaOR(true, false);
+
+        System.out.println("Hasil AND: " + hasil1);
+        System.out.println("Hasil OR: " + hasil2);
+    }
+    
+    public static boolean operasiLogikaAND(boolean operand1, boolean operand2) {
+        return operand1 && operand2;
+    }
+    public static boolean operasiLogikaOR(boolean operand1, boolean operand2) {
+        return operand1 || operand2;
+    }
+}
