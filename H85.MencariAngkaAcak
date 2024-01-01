@@ -1,0 +1,11 @@
+package H85;
+
+public class H85 {
+    
+    public static void main(String[] args) {
+        int x = 5;
+        int angka = (int) (Math.random() * x) + 1;
+        
+        System.out.println(angka);
+    }
+}
