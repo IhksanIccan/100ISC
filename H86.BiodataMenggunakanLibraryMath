@@ -1,0 +1,31 @@
+package H86;
+import java.util.Scanner;
+public class H86 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Masukkan Nama : ");
+        String nama = can.nextLine();
+
+        System.out.print("Masukkan Umur : ");
+        int umur = can.nextInt();
+
+        System.out.print("Masukkan Tinggi (cm) : ");
+        double tinggi = can.nextDouble();
+
+        double beratIdeal = hitungBeratIdeal(tinggi);
+
+        System.out.println("\nBiodata :");
+        System.out.println("Nama \t: " + nama);
+        System.out.println("Umur \t: " + umur + " tahun");
+        System.out.println("Tinggi \t: " + tinggi + " cm");
+        System.out.println("Berat Ideal : " + beratIdeal + " kg");
+
+        can.close();
+    }
+
+    private static double hitungBeratIdeal(double tinggi) {
+        double beratIdeal = Math.round((tinggi - 100) - ((tinggi - 100) * 0.1));
+        return beratIdeal;
+    }
+}
