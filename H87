@@ -1,0 +1,24 @@
+package H87;
+import java.util.Scanner;
+public class H87 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Angka pertama : ");
+        double angka1 = can.nextDouble();
+
+        System.out.print("Angka kedua   : ");
+        double angka2 = can.nextDouble();
+
+        System.out.println("Hasil Penjumlahan : " + (angka1 + angka2));
+        System.out.println("Hasil Pengurangan : " + (angka1 - angka2));
+        System.out.println("Hasil Perkalian   : " + (angka1 * angka2));
+        System.out.println("Hasil Pembagian   : " + (angka1 / angka2));
+        
+        System.out.println("Akar angka pertama  : " + Math.sqrt(angka1));
+        System.out.println("Pangkat angka kedua : " + Math.pow(angka2, 2));
+
+        can.close();
+    }
+}
+
