@@ -1,0 +1,31 @@
+package H89;
+
+import java.util.Scanner;
+
+public class H89 {
+
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.println("1.Jumat\n2.Sabtu\n3.Minggu\n");
+        System.out.print("Masukkan pilihan jadwal (1-3) : ");
+        int pilihan = can.nextInt();
+
+        PilihProses(pilihan);
+    }
+
+    public static void PilihProses(int pilihan) {
+        switch (pilihan) {
+            case 1:
+                System.out.println("Saatnya main futsal");
+                break;
+            case 2:
+                System.out.println("Saatnya main bulutangkis");
+                break;
+            case 3:
+                System.out.println("Saatnya pergi memancing");
+                break;
+            default:
+                System.out.println("Pilihan tidak valid");
+        }
+    }
+}
