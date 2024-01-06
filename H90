@@ -1,0 +1,20 @@
+package H90;
+
+import java.util.Scanner;
+
+public class H90 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner (System.in);
+        latihanFor(can);
+        can.close();
+    }
+    
+    public static void latihanFor(Scanner can) {
+        System.out.print("Masukkan angka : ");
+        int angka = can.nextInt();
+        for (int i = 1; i <=angka; i++) {
+            System.out.println("Angka : " + i);
+        }
+    }
+}
