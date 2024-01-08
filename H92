@@ -1,0 +1,19 @@
+package H92;
+
+public class H92 {
+    
+    public static void main(String[] args) {
+        int[] angka = {7, 10, 15, 22, 25};
+        cekArray(angka);
+    }
+    
+    public static void cekArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 == 0) {
+                System.out.println(array[i] + " angka genap");
+            } else {
+                System.out.println(array[i] + " angka ganjil");
+            }
+        }
+    }
+}
