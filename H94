@@ -1,0 +1,18 @@
+package H94;
+
+public class H94 {
+    
+    public static void main(String[] args) {
+        String nama = "Budy Anto";
+        
+        System.out.println("Jumlah Karakter\t: "+nama.length());
+        System.out.println("UpperCase\t: "+nama.toUpperCase());
+        System.out.println("LoverCase\t: "+nama.toLowerCase());
+        System.out.println("char[0]\t\t: "+nama.charAt(0));
+        
+        String[] kata = nama.split(" ");
+        System.out.println("Nama Depan\t: "+kata[0]);
+        System.out.println("Nama Belakang\t: "+kata[1]);
+        System.out.println("Jumlah Kata\t: "+kata.length);
+    }
+}
