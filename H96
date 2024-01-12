@@ -1,0 +1,25 @@
+package H96;
+
+import java.util.Scanner;
+
+public class H96 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah untuk membuat pola : ");
+        int jumlahBaris = can.nextInt();
+        
+        Pola(jumlahBaris);
+        can.close();
+    }
+    
+    public static void Pola(int jumlahBaris) {
+        for (int i = 1; i <= jumlahBaris; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
