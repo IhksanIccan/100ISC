@@ -1,0 +1,26 @@
+package H98;
+
+public class H98 {
+    
+    public static void main(String[] args) {
+        Biodata(cekBiodata());
+    }
+    public static String[] cekBiodata() {
+        String[] biodata = new String[5];
+
+        biodata[0] = "Nama    : IHKSAN";
+        biodata[1] = "Usia    : 19 Tahun";
+        biodata[2] = "Alamat  : Katitting";
+        biodata[3] = "Jurusan : Informatika";
+        biodata[4] = "Status  : Belum Menikah";
+
+        return biodata;
+    }
+    
+    public static void Biodata(String[] biodata) {
+        System.out.println(">>>>>BIODATA<<<<<");
+        for (String data : biodata) {
+            System.out.println(data);
+        }
+    }
+}
