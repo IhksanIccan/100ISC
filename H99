@@ -1,0 +1,29 @@
+package H99;
+
+import java.util.Scanner;
+
+public class H99 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Masukkan panjang angka : ");
+        int panjangArray = can.nextInt();
+        int[] array = new int[panjangArray];
+        
+        for (int i = 0; i < panjangArray; i++) {
+            System.out.print("Masukkan angka ke-" + (i + 1) + ": ");
+            array[i] = can.nextInt();
+        }
+        for (int i = 0; i < panjangArray; i++) {
+            if (Genap(array[i])) {
+                System.out.println(array[i] + " genap");
+            } else {
+                System.out.println(array[i] + " ganjil");
+            }
+        }
+        can.close();
+    }
+    public static boolean Genap(int bilangan) {
+        return bilangan % 2 == 0;
+    }
+}
