@@ -1,0 +1,20 @@
+package H100;
+
+import java.util.Scanner;
+
+public class H100 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+        System.out.print("Masukkan biodata (Nama,Jurusan,Umur,Alamat) : ");
+        String biodataInput = can.nextLine();
+        
+        String[] biodataArray = biodataInput.split(",");
+        
+        System.out.println("Nama\t: " + biodataArray[0]);
+        System.out.println("Jurusan\t: " + biodataArray[1]);
+        System.out.println("Umur\t: " + biodataArray[2]);
+        System.out.println("Alamat\t: " + biodataArray[3]);
+        
+    }
+}
