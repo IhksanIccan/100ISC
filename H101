@@ -1,0 +1,14 @@
+package H101;
+
+public class H101 {
+    
+    public static void main(String[] args) {
+        String kata = "Nama : Budy anto,Tgl lahir 25,Bulan 10,Tahun 2005";
+        String[] hasil = kata.split(",");
+        
+        for (String pecahan : hasil){
+        System.out.println(pecahan);
+    }
+    }
+    
+}
