@@ -1,0 +1,26 @@
+package H104;
+
+import java.util.Scanner;
+
+public class H104 {
+    
+    public static void main(String[] args) {
+        Scanner can = new Scanner(System.in);
+
+        System.out.print("Masukkan harga barang: ");
+        double hargaBarang = can.nextDouble();
+
+        System.out.print("Masukkan persentase diskon: ");
+        double persentaseDiskon = can.nextDouble();
+
+        double hargaSetelahDiskon = hitungHargaDiskon(hargaBarang, persentaseDiskon);
+
+        System.out.println("Harga setelah diskon: " + hargaSetelahDiskon);
+        
+    }
+    
+    public static double hitungHargaDiskon(double hargaAwal, double persentaseDiskon) {
+        double diskon = (persentaseDiskon / 100) * hargaAwal;
+        return hargaAwal - diskon;
+    }
+}
